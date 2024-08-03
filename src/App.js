@@ -1,6 +1,9 @@
 import React from "react";
+import Header from "./layout/Header";
 
 import "./App.css";
+import SideBar from "./layout/SideBar";
+import Recipes from "./components/Recipes";
 
 const recipes = [
   {
@@ -16,7 +19,12 @@ const recipes = [
 ];
 
 function App() {
-  return <div className="App">Let's add some content here</div>;
+  return (
+    <>
+      <Header />
+      <Recipes />
+    </>
+  );
 }
 
 export default App;
